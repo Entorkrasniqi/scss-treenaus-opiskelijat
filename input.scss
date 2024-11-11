@@ -1,0 +1,102 @@
+@import 'base';
+@import 'navigation';
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    background-color: #636363;
+    overflow: auto;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 16px 18px;
+  }
+  
+  nav a:hover {
+    background-color: beige;
+    color: black;
+  }
+
+
+  %piiloluokka {
+    margin: auto;
+    background-color: #1d103b;
+    padding: 10px;
+  }
+
+
+  .textbox1 .textbox2 {
+    padding: 16px;
+    border-radius: 10px;
+    width: 50%;
+  }
+
+
+
+  .textbox1 {
+    border: solid 1px #1d103b;
+    background-color: #636363;
+    padding: 16px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  .textbox2 {
+    border: solid 1px rgb(10, 69, 21);
+    background-color: #c145dd;
+    padding: 16px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  .center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+@mixin img-filter($blur) {
+    filter: blur($blur);
+    width: 50%;
+}
+
+  .image1 {
+    @include img-filter(5px);
+  }
+  
+  .image2 {
+    @include img-filter(10px);
+  }
+
+  .btn {
+    @include btn();
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #c145dd;
+  }
+
+  @mixin btn() {
+    background-color: #1d103b;
+    height: 30px;
+    border: 2px dashed red;;
+    border-radius: 15px;
+    color: #c145dd;
+    width: 100px;
+  } 

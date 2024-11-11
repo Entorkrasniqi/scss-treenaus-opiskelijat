@@ -1,0 +1,21 @@
+/* Error: Only 0 arguments allowed, but 1 was passed.
+ *     ,
+ * 73  | @mixin img-filter() {
+ *     |        ============ declaration
+ * ... |
+ * 79  |     @include img-filter(5px);
+ *     |     ^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *     '
+ *   input.scss 79:5  img-filter()
+ *   input.scss 79:5  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Only 0 arguments allowed, but 1 was passed.\a     \2577 \a 73  \2502  @mixin img-filter() {\a     \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a... \2502 \a 79  \2502      @include img-filter(5px);\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a   input.scss 79:5  img-filter()\a   input.scss 79:5  root stylesheet";
+}

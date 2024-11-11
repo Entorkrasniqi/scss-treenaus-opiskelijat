@@ -1,0 +1,24 @@
+nav ul {
+    list-style-type: none;
+    background-color: #636363;
+    overflow: auto;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 16px 18px;
+  }
+  
+  nav a:hover {
+    background-color: beige;
+    color: black;
+  }
